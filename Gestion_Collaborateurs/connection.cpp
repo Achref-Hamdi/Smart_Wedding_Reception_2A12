@@ -6,7 +6,7 @@ Connection::Connection()
 bool Connection::ouvrirConnection()
 {
     bool test=false;
-    db = QSqlDatabase::addDatabase("QODBC");
+    QSqlDatabase db = QSqlDatabase::addDatabase ("QODBC");
     db.setDatabaseName("base");
     db.setUserName("SYSTEM");
     db.setPassword("SYSTEM");
@@ -16,5 +16,5 @@ bool Connection::ouvrirConnection()
     return test;
 }
 
-void Connection::fermerConnection()
-{db.close();}
+/*void Connection::fermerConnection()
+{db.close();} */

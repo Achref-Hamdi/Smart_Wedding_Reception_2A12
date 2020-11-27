@@ -3,26 +3,42 @@
 #include <QString>
 #include <QSqlQuery>
 #include <QSqlQueryModel>
+#include "connection.h"
 
 class Collaborateur
 {
 private:
     int id,num;
     QString marque,adresse,mail;
+    QString date;
 
 public:
     Collaborateur();
     Collaborateur(int,QString,QString,QString,int);
-    ~Collaborateur();
-    int get_id(){return id;}
-    QString get_marque(){return marque;}
-    QString get_adresse(){return adresse;}
-    QString get_mail(){return mail;}
-    int get_num(){return num;}
+
+
+
 
     bool ajouter_collab();
     QSqlQueryModel * afficher_collab();
     bool supprimer_collab(int);
+    void modifier_collab();
+    void rechercher_collab(int);
+    int get_id();
+    QString get_marque();
+    QString get_adresse();
+    QString get_mail();
+    int get_num();
+
+    void set_id(int);
+    void set_marque(QString );
+    void set_adresse(QString );
+    void set_mail(QString );
+    void set_num(int);
+
+
+
+
 };
 
 #endif // COLLABORATEUR_H
