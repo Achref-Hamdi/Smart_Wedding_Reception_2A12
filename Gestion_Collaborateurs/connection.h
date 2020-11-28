@@ -11,6 +11,7 @@ class Connection
 public:
     Connection();
     bool ouvrirConnection();
+    ~Connection();
 
 
 

@@ -60,13 +60,6 @@ void MainWindow::on_ajouter_clicked()
 
 
 
-
-
-
-
-
-
-
 /*
 void MainWindow::on_supprimer_clicked()
 {
@@ -91,57 +84,6 @@ void MainWindow::on_supprimer_clicked()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 void MainWindow::on_modifier_clicked()
 {
@@ -159,10 +101,6 @@ void MainWindow::on_modifier_clicked()
                                          "Click Cancel to exit."), QMessageBox::Cancel);
 
 }
-
-
-
-
 
 
 

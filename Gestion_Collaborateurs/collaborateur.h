@@ -10,7 +10,6 @@ class Collaborateur
 private:
     int id,num;
     QString marque,adresse,mail;
-    QString date;
 
 public:
     Collaborateur();
@@ -24,6 +23,9 @@ public:
     bool supprimer_collab(int);
     void modifier_collab();
     void rechercher_collab(int);
+    void tri_collab();
+
+
     int get_id();
     QString get_marque();
     QString get_adresse();
