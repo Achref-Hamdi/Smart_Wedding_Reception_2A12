@@ -144,6 +144,9 @@ QSqlQueryModel* Collaborateur::trier_collab_adresse()
 }
 
 
+
+
+
 QSqlQueryModel* Collaborateur::afficher_collaborateur(int id)
 {
     QSqlQuery query;
@@ -160,10 +163,6 @@ QSqlQueryModel* Collaborateur::afficher_collaborateur(int id)
     model->setHeaderData(4, Qt::Horizontal, QObject::tr("NUMERO"));
 return model ;
 }
-
-
-
-
 
 bool Collaborateur::rechercher_collab(int id)
 {

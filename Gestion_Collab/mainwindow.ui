@@ -570,7 +570,7 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
 font: 9pt &quot;MS Shell Dlg 2&quot;;</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pb_afficher_collaborateur">
+       <widget class="QPushButton" name="pb_rechercher_id">
         <property name="geometry">
          <rect>
           <x>440</x>
@@ -1158,7 +1158,7 @@ font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
      <x>0</x>
      <y>0</y>
      <width>1309</width>
-     <height>22</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

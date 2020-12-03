@@ -22,7 +22,7 @@ connect(ui->pb_supprimer, SIGNAL(clicked(bool)), this, SLOT(on_pb_supprimer_clic
 connect(ui->pb_modifier_collab, SIGNAL (clicked(bool)), this, SLOT(on_pb_modifier_collab_clicked())); //modif
 
 
-connect(ui->pb_afficher_collaborateur, SIGNAL (clicked(bool)), this, SLOT(on_pb_afficher_collaborateur_clicked()));
+connect(ui->pb_rechercher_id, SIGNAL (clicked(bool)), this, SLOT(on_pb_rechercher_id_clicked()));
 
 
 
@@ -214,8 +214,9 @@ void MainWindow::on_radioB_tri_adresse_clicked()
 }
 
 
-void MainWindow::on_pb_afficher_collaborateur_clicked(){
 
+void MainWindow::on_pb_rechercher_id_clicked()
+{
     int id = ui->lineEdit_id_collab_4->text().toInt();
     ui->collab_trouve->setModel(tmpcollaborateur.afficher_collaborateur(id));
 }

@@ -23,6 +23,7 @@ private slots:
     void on_pb_ajouter_clicked();
     void on_pb_supprimer_clicked();
     void on_pb_modifier_collab_clicked();
+
     void on_pb_ajouter_cat_clicked();
     void on_pb_supprimer_cat_clicked();
     void on_pb_modifier_cat_clicked();
@@ -32,11 +33,10 @@ private slots:
     void on_radioB_tri_adresse_clicked();
 
 
-    void on_pb_afficher_collaborateur_clicked();
-
-
+    void on_pb_rechercher_id_clicked();
     //void on_pb_rechercher_marque_clicked();
     //void on_pb_rechercher_adresse_clicked();
+
 private:
 
     Ui::MainWindow *ui;

@@ -37,14 +37,14 @@ bool ajouter_collab();
 QSqlQueryModel* afficher_collab();
 bool supprimer_collab(int);
 bool modifier_collab();
-bool rechercher_collab(int id);
+
 QSqlQueryModel* trier_collab_id();
 QSqlQueryModel* trier_collab_marque();
 QSqlQueryModel* trier_collab_adresse();
 
 
 QSqlQueryModel* afficher_collaborateur(int id);
-
+bool rechercher_collab(int id);
 
 };
 
