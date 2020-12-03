@@ -32,7 +32,7 @@ private slots:
     void on_radioB_tri_adresse_clicked();
 
 
-    void on_pb_afficher_collaborateur_clicked();        // rechercher par id
+    void on_pb_afficher_collaborateur_clicked();
 
 
     //void on_pb_rechercher_marque_clicked();
@@ -43,7 +43,6 @@ private:
 
     Collaborateur tmpcollaborateur;
     Categorie tmpcategorie;
-    QByteArray data;
 };
 
 

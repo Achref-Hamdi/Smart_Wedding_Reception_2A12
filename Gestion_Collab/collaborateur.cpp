@@ -88,10 +88,10 @@ return    query.exec();
 bool Collaborateur::modifier_collab()
 {
     QSqlQuery query ;
-           QString res= QString::number(id);                                                 // lezm res ?
+           QString res= QString::number(id);
            query.prepare("update COLLABORATEURS set MARQUE=:marque,ADRESSE=:adresse,MAIL=:mail,NUMERO=:numero where ID=:id ");
 
-           query.bindValue(":id",res);                                                             // lezm res ?
+           query.bindValue(":id",res);
            query.bindValue(":marque",marque);
            query.bindValue(":adresse",adresse);
            query.bindValue(":mail",mail);
@@ -144,12 +144,6 @@ QSqlQueryModel* Collaborateur::trier_collab_adresse()
 }
 
 
-// taamel fonction afficher un collab par id li heya afficher_c(id)
-// taamel rechercher un collab par id li heya rechercher_collab()
-// if(rechercher(id) = true) temchi taamel appel l fonction afficher_c(id)
-
-
-
 QSqlQueryModel* Collaborateur::afficher_collaborateur(int id)
 {
     QSqlQuery query;
@@ -167,7 +161,11 @@ QSqlQueryModel* Collaborateur::afficher_collaborateur(int id)
 return model ;
 }
 
-bool Collaborateur::rechercher_collab(int id)         // pour verifier mawjoud "wala" le
+
+
+
+
+bool Collaborateur::rechercher_collab(int id)
 {
     QSqlQuery query ;
         QString res = QString::number(id);

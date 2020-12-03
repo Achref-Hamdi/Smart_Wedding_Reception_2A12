@@ -58,7 +58,7 @@ void MainWindow::on_pb_ajouter_clicked()
 
     if(test){
         foreach(QLineEdit* le, findChildren<QLineEdit*>())
-        { le->clear(); }                                                // tfasa5 champ taa line-edits
+        { le->clear(); }
 
       QMessageBox::information(this, QObject::tr("Ajouter un collaborateur"),
       QObject::tr(" collaborateur ajouté.\n"
@@ -119,11 +119,6 @@ void MainWindow::on_pb_modifier_collab_clicked()
                  QObject::tr("Erreur !.\n"
                              "Click Cancel to exit."), QMessageBox::Cancel);
 }
-void MainWindow::on_pb_afficher_collaborateur_clicked(){
-
-    int id = ui->lineEdit_id_collab_4->text().toInt();
-    ui->collab_trouve->setModel(tmpcollaborateur.afficher_collaborateur(id));
-}
 
 void MainWindow::on_pb_ajouter_cat_clicked()
 {
@@ -138,7 +133,7 @@ void MainWindow::on_pb_ajouter_cat_clicked()
 
     if(test){
         foreach(QLineEdit* le, findChildren<QLineEdit*>())
-        { le->clear(); }                                                // tfasa5 champ taa line-edits
+        { le->clear(); }
 
       QMessageBox::information(this, QObject::tr("Ajouter une Catégorie"),
       QObject::tr(" Catégorie ajoutée.\n"
@@ -156,7 +151,7 @@ void MainWindow::on_pb_supprimer_cat_clicked()
 {
     int id = ui->lineEdit_id_cat_2->text().toInt();
     bool test=tmpcategorie.supprimer_cat(id);
-    ui->tabcategorie->setModel(tmpcategorie.afficher_cat());                //refresh
+    ui->tabcategorie->setModel(tmpcategorie.afficher_cat());
 
      if(test){
     foreach(QLineEdit* le, findChildren<QLineEdit*>()) {
@@ -218,6 +213,12 @@ void MainWindow::on_radioB_tri_adresse_clicked()
     ui->tabcollaborateur->setModel(tmpcollaborateur.trier_collab_adresse());
 }
 
+
+void MainWindow::on_pb_afficher_collaborateur_clicked(){
+
+    int id = ui->lineEdit_id_collab_4->text().toInt();
+    ui->collab_trouve->setModel(tmpcollaborateur.afficher_collaborateur(id));
+}
 
 
 
