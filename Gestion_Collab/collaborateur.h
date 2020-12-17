@@ -46,6 +46,16 @@ QSqlQueryModel* trier_collab_adresse();
 QSqlQueryModel* afficher_collaborateur(int id);
 bool rechercher_collab(int id);
 
+
+
+
+
+
+
+/*
+bool rechercher_collab_marque(QString);
+bool rechercher_collab_adresse(QString);
+*/
 };
 
 #endif // COLLABORATEUR_H

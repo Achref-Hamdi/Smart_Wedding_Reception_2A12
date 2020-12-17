@@ -145,8 +145,6 @@ QSqlQueryModel* Collaborateur::trier_collab_adresse()
 
 
 
-
-
 QSqlQueryModel* Collaborateur::afficher_collaborateur(int id)
 {
     QSqlQuery query;
@@ -181,3 +179,34 @@ bool Collaborateur::rechercher_collab(int id)
 
 
 
+
+
+
+
+/*
+bool Collaborateur::rechercher_collab_marque(QString marque)
+{
+    QSqlQuery query ;
+        QString res = QString::number(marque);
+        query.prepare("SELECT MARQUE FROM COLLABORATEURS WHERE MARQUE=:marque");
+        query.bindValue(":marque", res);
+        query.exec();
+
+        if(query.size()!=marque){return false;}
+        else return true;
+}
+
+
+bool Collaborateur::rechercher_collab_adresse(QString adresse)
+{
+    QSqlQuery query ;
+        QString res = QString::number(adresse);
+        query.prepare("SELECT ADRESSE FROM COLLABORATEURS WHERE ADRESSE=:adresse");
+        query.bindValue(":adresse", res);
+        query.exec();
+
+        if(query.size()!=adresse){return false;}
+        else return true;
+}
+
+*/
