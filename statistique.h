@@ -1,8 +1,8 @@
 #ifndef STATISTIQUE_H
 #define STATISTIQUE_H
-#include <QtCharts/QCategoryAxis>
-#include <QtCharts/QPieSeries>
-#include <QtCharts/QPieSlice>
+//#include <QtCharts/QCategoryAxis>
+//#include <QtCharts/QPieSeries>
+//#include <QtCharts/QPieSlice>
 #include <QPainter>
 #include <QSqlQuery>
 #include <QDialog>

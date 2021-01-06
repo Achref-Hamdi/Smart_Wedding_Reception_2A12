@@ -66,6 +66,8 @@ private slots:
 
     void on_pushButton_10_clicked();
 
+    void on_radioButton_traduction_clicked();
+
 private:
     Ui::employe_fiche *ui;
     Employes tmpEmpl;

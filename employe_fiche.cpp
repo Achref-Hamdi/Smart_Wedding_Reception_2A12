@@ -302,3 +302,80 @@ void employe_fiche::on_pushButton_10_clicked()
 {
     hide();
 }
+
+void employe_fiche::on_radioButton_traduction_clicked()
+{
+
+    if(ui->radioButton_traduction->isChecked())
+    {
+
+        ui->tabWidget_2->setTabText(0,"Employee");
+        ui->tabWidget_2->setTabText(1,"Monitoring sheet");
+        ui->tabWidget->setTabText(0,"Add employee");
+        ui->tabWidget->setTabText(1,"Employee list");
+        ui->label->setText(tr("ID"));
+        ui->label_2->setText(tr("First name"));
+        ui->label_3->setText(tr("Last name"));
+        ui->label_6->setText(tr("Address"));
+        ui->label_4->setText(tr("Birth year"));
+        ui->label_5->setText(tr("Number"));
+        ui->pushButton_ajouter->setText(tr("ADD"));
+        ui->pushButton_imprimer->setText(tr("Print"));
+        ui->pushButton_modi->setText(tr("Search"));
+        ui->pushButton_modif->setText(tr("Update"));
+        ui->pushButton_2->setText(tr("Delete"));
+        ui->radioButton_traduction->setText(tr("Frensh Version"));
+        ui->lineEdit_7->setText(tr("search/Delete"));
+        ui->lineEdit_16->setText(tr("ID"));
+        ui->lineEdit_17->setText(tr("First name"));
+        ui->lineEdit_18->setText(tr("Last name"));
+        ui->lineEdit_19->setText(tr("address"));
+        ui->lineEdit_20->setText(tr("DD/MM/YYYY"));
+        ui->lineEdit_21->setText(tr("Phone Number"));
+        ui->label_14->setText(tr("ID"));
+        ui->label_15->setText(tr("First name"));
+        ui->label_16->setText(tr("Last name"));
+        ui->label_17->setText(tr("Address"));
+        ui->label_18->setText(tr("Birth year"));
+        ui->label_19->setText(tr("Phone Number"));
+
+
+    }
+
+ else
+        {
+        ui->tabWidget_2->setTabText(0,"Employée");
+        ui->tabWidget_2->setTabText(1,"Fiche de Suivi");
+        ui->tabWidget->setTabText(0,"Ajouter Employée");
+        ui->tabWidget->setTabText(1,"Liste des Employées");
+        ui->label->setText(tr("ID"));
+        ui->label_2->setText(tr("Nom"));
+        ui->label_3->setText(tr("Prenom"));
+        ui->label_6->setText(tr("Adresse"));
+        ui->label_4->setText(tr("Date de naissance"));
+        ui->label_5->setText(tr("Numeror"));
+        ui->pushButton_ajouter->setText(tr("Ajouter"));
+        ui->pushButton_imprimer->setText(tr("Imprimer"));
+        ui->pushButton_modi->setText(tr("recherche"));
+        ui->pushButton_modif->setText(tr("Modifier"));
+        ui->pushButton_2->setText(tr("Supprimer"));
+        ui->radioButton_traduction->setText(tr("Version Anglais"));
+        ui->lineEdit_7->setText(tr("supprimer/recherche"));
+        ui->lineEdit_16->setText(tr("ID"));
+        ui->lineEdit_17->setText(tr("Nom"));
+        ui->lineEdit_18->setText(tr("Prenom"));
+        ui->lineEdit_19->setText(tr("Adresse"));
+        ui->lineEdit_20->setText(tr("DD/MM/YYYY"));
+        ui->lineEdit_21->setText(tr("Numero"));
+        ui->label_14->setText(tr("ID"));
+        ui->label_15->setText(tr("Nom"));
+        ui->label_16->setText(tr("Prenom"));
+        ui->label_17->setText(tr("Adresse"));
+        ui->label_18->setText(tr("Date de naissance"));
+        ui->label_19->setText(tr("Numero"));
+
+
+        }
+
+
+}
