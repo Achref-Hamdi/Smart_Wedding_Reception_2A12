@@ -14,6 +14,7 @@
 #include<QDateTime>
 #include<QTimer>
 #include<statistique.h>
+#include"accueil.h"
 
 
 
@@ -659,3 +660,82 @@ void Dialog::on_pushButton_8_clicked()
 }
 
 
+
+void Dialog::on_pushButton_9_clicked()
+{
+ accueil Acceuil;
+Acceuil.setModal(true);
+Acceuil.exec();
+}
+
+void Dialog::on_pushButton_10_clicked()
+{
+    hide();
+}
+
+void Dialog::on_radioButton_3_clicked()
+{
+    ui->tabWidget->setTabText(0,"Customer");
+                ui->tabWidget->setTabText(1,"Reservation");
+                ui->tabWidget_2->setTabText(0,"Add Customer");
+                 ui->tabWidget_2->setTabText(1,"show Customer");
+
+                 ui->label_id->setText( tr("ID"));
+                        ui->label_nom->setText( tr(" Name"));
+                        ui->label_prenom->setText( tr("First name "));
+                        ui->label_budget_max->setText( tr("Maximum budget"));
+                        ui->label_numero->setText( tr("Number"));
+                        ui->label_date->setText( tr("Wedding "));
+                        ui->label_categorie->setText( tr("category "));
+
+                        ui->pushButton->setText( tr("ADD"));
+                                ui->pushButton_edit->setText( tr("Modify"));
+}
+
+void Dialog::on_radioButton_4_clicked()
+{
+    ui->tabWidget->setTabText(0,"Customer");
+               ui->tabWidget->setTabText(1,"Reservation");
+               ui->tabWidget_2->setTabText(0,"Add Customer");
+                ui->tabWidget_2->setTabText(1,"show Customer");
+
+                ui->radioButton_2->setText( tr("Sort by ID"));
+                       ui->radioButton->setText( tr(" Sort by Name"));
+                       ui->pushButton_delete->setText( tr("Delete"));
+                       ui->pushButton_8->setText( tr("statistics"));
+                       ui->pushButton_actualiser->setText( tr("Refresh"));
+                       ui->pushButton_recherche->setText( tr("search "));
+
+}
+
+void Dialog::on_radioButton_6_clicked()
+{
+    ui->tabWidget->setTabText(0,"Customer");
+                ui->tabWidget->setTabText(1,"Reservation");
+                ui->tabWidget_2->setTabText(0,"Add Customer");
+                 ui->tabWidget_2->setTabText(1,"show Customer");
+
+                 ui->label_id_2->setText( tr(" ID"));
+                        ui->label_gp_music->setText( tr("Name Group Music"));
+                        ui->label_gpserveur->setText( tr("server group name"));
+                        ui->label_gpdeco->setText( tr("Deco group name"));
+                        ui->label_gppati->setText( tr("pastry group name"));
+                        ui->label_gpphoto->setText( tr("name group photograph "));
+
+                        ui->pushButton_sauvgarderreservatio->setText( tr("ADD "));
+                        ui->pushButton_modifierreservation->setText( tr("Modify  "));
+
+}
+
+void Dialog::on_radioButton_5_clicked()
+{
+              ui->tabWidget->setTabText(0,"Customer");
+                ui->tabWidget->setTabText(1,"Reservation");
+                ui->tabWidget_2->setTabText(0,"Add Customer");
+                 ui->tabWidget_2->setTabText(1,"show Customer");
+
+                 ui->pushButton_4->setText( tr("refresh "));
+                 ui->pushButton_3->setText( tr("delete  "));
+                 ui->pushButton_5->setText( tr("Print"));
+
+}

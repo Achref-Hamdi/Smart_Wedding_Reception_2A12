@@ -9,6 +9,7 @@
 
 
 
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Dialog; }
 QT_END_NAMESPACE
@@ -75,6 +76,16 @@ private slots:
 
      void on_pushButton_9_clicked();
 
+     void on_pushButton_10_clicked();
+
+     void on_radioButton_3_clicked();
+
+     void on_radioButton_4_clicked();
+
+     void on_radioButton_6_clicked();
+
+     void on_radioButton_5_clicked();
+
 public:
     explicit Dialog(QWidget *parent = nullptr);
     ~Dialog();
@@ -83,6 +94,7 @@ private:
     Ui::Dialog *ui;
     QMediaPlayer* player;
     QPropertyAnimation *animation;
+
 
 
 

@@ -1,4 +1,4 @@
-QT       += core gui sql printsupport multimedia
+QT       += core gui sql printsupport multimedia serialport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,24 +10,47 @@ CONFIG += c++11
 
 SOURCES += \
     accueil.cpp \
+    arduino.cpp \
+    categorie.cpp \
     client.cpp \
+    collab_categorie.cpp \
+    collaborateur.cpp \
     connexion.cpp \
+    employe_fiche.cpp \
+    employes.cpp \
+    fiches.cpp \
+    invite.cpp \
+    invite_reception.cpp \
     main.cpp \
     dialog.cpp \
+    reception.cpp \
     reservation.cpp \
     statistique.cpp
 
 HEADERS += \
     accueil.h \
+    arduino.h \
+    categorie.h \
     client.h \
+    collab_categorie.h \
+    collaborateur.h \
     connexion.h \
     dialog.h \
+    employe_fiche.h \
+    employes.h \
+    fiches.h \
+    invite.h \
+    invite_reception.h \
+    reception.h \
     reservation.h \
     statistique.h
 
 FORMS += \
     accueil.ui \
+    collab_categorie.ui \
     dialog.ui \
+    employe_fiche.ui \
+    invite_reception.ui \
     statistique.ui
 
 # Default rules for deployment.

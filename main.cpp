@@ -1,6 +1,8 @@
 #include "dialog.h"
 #include"accueil.h"
 #include"connexion.h"
+#include"employe_fiche.h"
+
 
 #include <QApplication>
 
@@ -10,7 +12,9 @@ int main(int argc, char *argv[])
 
        // Dialog dialog;
 
-   accueil w;
+//employe_fiche w ;
+  accueil w;
+
         connexion c;
         bool test=c.createconnect();
         if(test)
